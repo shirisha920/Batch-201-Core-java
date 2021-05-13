@@ -1,0 +1,36 @@
+public class RussianMultiplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(getProduct(Integer.parseInt(args[0]),Integer.parseInt(args[1])));
+		
+	}
+
+	private static String getProduct(int n1,int n2) {
+		// TODO Auto-generated method stub
+		 {
+		        int product = 0;
+		        if (n1 > 0 && n2 > 0) 
+		        {
+		            product = product + n2;
+		            while (n1 != 1) 
+		            {
+		                n1 = n1 / 2;
+		                n2 = n2 * 2;
+		                if (n1 % 2 != 0)
+		                    product = product + n2;
+		            }
+
+		 
+
+		            return "" + product;
+		        } else
+		            return "" + (-1);
+		    }
+		}
+		 
+	
+	}
+
+
